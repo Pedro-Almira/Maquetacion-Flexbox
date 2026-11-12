@@ -1,0 +1,59 @@
+/* ==========================================
+   ASSETS NAV
+========================================== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    background-color: var(--color-primary);
+    border-radius: var(--border-medium);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LISTA */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+}
+
+/* ELEMENTOS */
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* ENLACES */
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 12px;
+
+    color: white;
+    border-radius: var(--border-small);
+    transition: background-color 0.2s ease;
+}
+
+/* HOVER */
+
+nav ul li a:hover {
+    background-color: var(--color-secondary);
+    color: black;
+}

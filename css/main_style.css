@@ -1,0 +1,259 @@
+/* ==========================================
+   MAIN_STYLE.CSS
+========================================== */
+
+/* 1. VARIABLES GLOBALES */
+
+:root {
+    --color-primary: #111111;
+    --color-secondary: #f5f5f7;
+    --color-accent: #0071e3;
+    --color-background: #e0e3e3;
+    --color-text: #1d1d1f;
+    --color-text-secondary: #6e6e73;
+    --color-border: #d2d2d7;
+
+    --font-main: 'Roboto', Arial, Helvetica, sans-serif;
+
+    --font-small: 14px;
+    --font-normal: 16px;
+    --font-medium: 20px;
+    --font-large: 32px;
+    --font-title: 48px;
+
+    --width-container: 1400px;
+
+    --border-small: 8px;
+    --border-medium: 16px;
+    --border-large: 24px;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+
+
+/* 2. NORMALIZACIÓN BÁSICA */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: var(--font-main);
+    font-size: var(--font-normal);
+    line-height: 1.6;
+
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+
+/* 3. CONTENEDOR GLOBAL */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 1000px;
+    max-width: 2000px;
+
+    height: 120vh;
+    margin: 0 auto;
+}
+
+/* 4. LAS CUATRO SECCIONES VERTICALES */
+
+/* Primera sección: 12% */
+
+header {
+    flex: 0 0 12vh;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Segunda sección: 8% */
+
+nav {
+    flex: 0 0 8vh;
+    min-height: 0;
+}
+
+/* Tercera sección: 73% */
+
+main {
+    flex: 0 0 73vh;
+    min-height: 0;
+
+    display: flex;
+    overflow: hidden;
+}
+
+/* Cuarta sección: 21% */
+
+footer {
+    flex: 0 0 21%;
+    min-height: 0;
+}
+
+
+/* 5. FLEXBOX PRINCIPAL: SIDEBAR + CONTENIDO */
+
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--spacing-medium);
+
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+
+/* Sidebar ocupa el 25% */
+
+.sidebar {
+    flex: 0 0 25%;
+    min-height: 0;
+}
+
+/* Content ocupa el espacio restante */
+
+.content {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+/* El Flexbox interior ocupa toda la altura disponible */
+
+.flex-container {
+    flex: 1 1 0;
+    min-height: 0;
+    min-width: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* 6. TÍTULOS Y TEXTOS */
+
+h1, h2, h3, h4 {
+    color: var(--color-primary);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-medium);
+}
+
+h1 {
+    font-size: var(--font-title);
+}
+
+h2 {
+    font-size: var(--font-large);
+}
+
+h3 {
+    font-size: var(--font-medium);
+}
+
+p {
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-text-secondary);
+}
+
+
+/* 7. IMÁGENES */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-medium);
+}
+
+
+/* 8. ENLACES Y BOTONES */
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--font-main);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: var(--border-large);
+    background-color: var(--color-accent);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* 9. TARJETAS */
+
+.card {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-medium);
+    border: 1px solid var(--color-border);
+}
+
+
+/* 10. TRANSICIONES */
+
+a,
+button,
+.card {
+    transition: all 0.3s ease;
+}
+
+
+/* 11. ELEMENTO FIJO INFERIOR DERECHO */
+
+.fixed-element {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+/* 12. ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .main-layout {
+        gap: 10px;
+    }
+
+    .sidebar {
+        flex-basis: 30%;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web diseñada con Flexbox">
+    <title>Mi proyecto Flexbox</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/assets/assets_flexbox.css">
+    <link rel="stylesheet" href="css/assets/assets_sidebar.css">
+    <link rel="stylesheet" href="css/assets/assets_footer.css">
+    <link rel="stylesheet" href="css/assets/assets_nav.css">
+    <link rel="stylesheet" href="css/assets/assets_bottom_bar.css">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <!-- SECCIÓN 1: HEADER (15vh) -->
+        <header id="cabeza">
+            <h1>Mi página web</h1>
+            <p>Diseño y estructura con Flexbox</p>
+        </header>
+
+        <!-- SECCIÓN 2: NAV (10vh) -->
+        <nav>
+            <ul>
+                <li><a href="#cabeza">Cabeza</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- SECCIÓN 3: MAIN (75vh) -->
+        <main id="inicio">
+
+            <div class="main-layout">
+
+                <aside class="sidebar">
+                    <h2>Sidebar</h2>
+                    <p>Menú lateral de navegación.</p>
+                </aside>
+
+                <section class="content" id="contenido">
+
+                    <div class="flex-container">
+
+                        <!-- TARJETAS -->
+                        <div><img src="https://picsum.photos/400/500?random=1" alt="Paisaje aleatorio 1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=2" alt="Paisaje aleatorio 2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=3" alt="Paisaje aleatorio 3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=4" alt="Paisaje aleatorio 4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=5" alt="Paisaje aleatorio 5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=6" alt="Paisaje aleatorio 6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=7" alt="Paisaje aleatorio 7"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=8" alt="Paisaje aleatorio 8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=9" alt="Paisaje aleatorio 9"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=10" alt="Paisaje aleatorio 10"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=11" alt="Paisaje aleatorio 11"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=12" alt="Paisaje aleatorio 12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=13" alt="Paisaje aleatorio 13"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=14" alt="Paisaje aleatorio 14"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=15" alt="Paisaje aleatorio 15"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                        <div><img src="https://picsum.photos/400/500?random=16" alt="Paisaje aleatorio 16"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- SECCIÓN 4: FOOTER (25vh) -->
+        <footer id="contacto">
+
+            <div>
+                <h2>Sobre nosotros</h2>
+                <p>Información general de nuestra página web.</p>
+            </div>
+
+            <div>
+                <h2>Contacto</h2>
+                <p>contacto@ejemplo.com</p>
+            </div>
+
+            <div class="footer-social">
+                <h2>Redes sociales</h2>
+
+                <a href="#" aria-label="Instagram">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <span class="material-symbols-outlined">public</span>
+                </a>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- BARRA FIJA INFERIOR -->
+    <div class="bottom-bar">
+        <p>© 2026 Mi página web</p>
+        <a href="#cabeza">Volver arriba</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+/* ==========================================
+   ASSETS BOTTOM BAR
+   BARRA INFERIOR FIJA
+========================================== */
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 30px;
+
+    padding: var(--spacing-small) var(--spacing-medium);
+
+    background-color: var(--color-primary);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+/* ENLACES DE LA BARRA */
+
+.bottom-bar a {
+    color: white;
+}
+
+/* CONTENIDO INTERNO */
+
+.bottom-bar-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+}

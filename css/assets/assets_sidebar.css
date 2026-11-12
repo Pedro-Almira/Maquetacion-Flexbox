@@ -1,0 +1,41 @@
+
+/* ==========================================
+   ASSETS SIDEBAR
+   BARRA LATERAL
+========================================== */
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    
+    padding: var(--spacing-medium);
+
+    background-color: var(--color-secondary);
+    border-radius: var(--border-medium);
+
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+/* TÍTULO DEL SIDEBAR */
+
+.sidebar h2 {
+    font-size: var(--font-medium);
+}
+
+/* ENLACES */
+
+.sidebar a {
+    color: var(--color-text);
+    padding: var(--spacing-small);
+    border-radius: var(--border-small);
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: var(--color-background);
+    color: var(--color-accent);
+}

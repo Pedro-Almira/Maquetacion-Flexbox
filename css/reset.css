@@ -1,0 +1,72 @@
+
+/* =================================
+   RESET CSS - NORMALIZACIÓN
+================================= */
+
+/* Eliminar márgenes y rellenos predeterminados */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamiento general del documento */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Configuración general del body */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/* Eliminar estilos de listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Enlaces */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Imágenes y elementos multimedia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Formularios */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+}
+
+/* Evitar desbordamientos de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+}

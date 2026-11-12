@@ -1,0 +1,80 @@
+
+/* ==========================================
+   ASSETS FOOTER
+   PIE DE PÁGINA
+========================================== */
+
+footer {
+    width: 100%;
+    padding: var(--spacing-large) 5%;
+    padding-bottom: 80px;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--spacing-medium);
+    flex-direction: row;
+    margin-top: -30px;
+    clip-path: inset(30px 0 0 0);
+    border-radius: var(--border-medium);
+}
+
+/* BLOQUES DEL FOOTER */
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+footer div {
+    width: 40%;
+}
+
+/* TÍTULOS */
+
+footer h3 {
+    color: white;
+    font-size: var(--font-medium);
+}
+
+/* ENLACES */
+
+footer a {
+    color: #d2d2d7;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* REDES SOCIALES */
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* ICONOS */
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: var(--border-medium);
+}
+
+
+.footer-social h2 {
+    width: 100%;
+    color: whitesmoke;
+}
+
+.footer-social .material-symbols-outlined {
+    font-size: 24px;
+}
